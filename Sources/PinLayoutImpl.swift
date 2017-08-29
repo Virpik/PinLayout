@@ -28,7 +28,11 @@
 import Foundation
 
 #if os(iOS) || os(tvOS)
-import UIKit
+    import UIKit
+#else
+    import AppKit
+
+#endif
     
 class PinLayoutImpl: PinLayout {
     internal let view: UIView
@@ -1122,4 +1126,3 @@ extension PinLayoutImpl {
     }
 }
 
-#endif

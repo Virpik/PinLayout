@@ -31,7 +31,14 @@ import PinLayout
 
 class JustifyAlignSpec: QuickSpec {
     override func spec() {
+        
+        #if os(iOS) || os(tvOS)
         var viewController: UIViewController!
+        let color = UIColor.red.withAlphaComponent(0.5)
+        #else
+            var viewController: NSViewController!
+            let color = NSColor.red.withAlphaComponent(0.5)
+        #endif
         var rootView: BasicView!
         var aView: BasicView!
         
@@ -48,13 +55,18 @@ class JustifyAlignSpec: QuickSpec {
         beforeEach {
             _pinlayoutUnitTestLastWarning = nil
             
-            viewController = UIViewController()
+            #if os(iOS) || os(tvOS)
+                viewController = UIViewController()
+            #else
+                viewController = NSViewController()
+            #endif
+            
             
             rootView = BasicView(text: "", color: .white)
             rootView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
             viewController.view.addSubview(rootView)
             
-            aView = BasicView(text: "View A", color: UIColor.red.withAlphaComponent(0.5))
+            aView = BasicView(text: "View A", color: color)
             aView.frame = CGRect(x: 40, y: 100, width: 100, height: 60)
             aView.sizeThatFitsExpectedArea = 40 * 40
             rootView.addSubview(aView)

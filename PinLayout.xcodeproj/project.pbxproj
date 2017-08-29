@@ -48,7 +48,7 @@
 		247E31C01F54ADC70097201F /* PinEdgesSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A36BC1E918301000F9856 /* PinEdgesSpec.swift */; };
 		247E31C11F54ADC70097201F /* MarginsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C6E141E776A0C0074FC74 /* MarginsSpec.swift */; };
 		247E31C21F54ADC70097201F /* PinLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249EFE881E64FB4C00165E39 /* PinLayoutTests.swift */; };
-		247E31D61F54B5620097201F /* PinLayoutOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247E31921F54A64A0097201F /* PinLayoutOSX.framework */; };
+		247E31F91F559A600097201F /* PinLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249EFE7A1E64FB4C00165E39 /* PinLayout.framework */; };
 		2482908C1E78CFFC00667D08 /* RelativePositionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2482908B1E78CFFC00667D08 /* RelativePositionSpec.swift */; };
 		24949A281EF550E2003643D3 /* PinLayoutImpl+Relative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24949A271EF550E2003643D3 /* PinLayoutImpl+Relative.swift */; };
 		24949A2A1EF551D6003643D3 /* PinLayoutImpl+Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24949A291EF551D6003643D3 /* PinLayoutImpl+Coordinates.swift */; };
@@ -128,7 +128,7 @@
 		242723711F008B85006A5C3A /* MinMaxWidthHeightSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinMaxWidthHeightSpec.swift; sourceTree = "<group>"; };
 		242E8DC11EED5982005935FB /* RelativePositionMultipleViewsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelativePositionMultipleViewsSpec.swift; sourceTree = "<group>"; };
 		244C6E141E776A0C0074FC74 /* MarginsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarginsSpec.swift; sourceTree = "<group>"; };
-		244DF2F81EF46C500090508B /* PinLayoutTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PinLayoutTVOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		244DF2F81EF46C500090508B /* PinLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PinLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		244DF3011EF46F670090508B /* InfoTVOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = InfoTVOS.plist; path = Sources/InfoTVOS.plist; sourceTree = SOURCE_ROOT; };
 		244DF3041EF46FB90090508B /* PinLayoutTVOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PinLayoutTVOS.h; path = Sources/PinLayoutTVOS.h; sourceTree = SOURCE_ROOT; };
 		245302061ED05FD000E13F29 /* AccurencyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccurencyTests.swift; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 		2469C5011E75D88500073BEE /* BasicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicView.swift; sourceTree = "<group>"; };
 		2469C5031E75DB7600073BEE /* RectNimbleMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectNimbleMatcher.swift; sourceTree = "<group>"; };
 		246D36471E6C46F50050F202 /* PinPointCoordinatesSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinPointCoordinatesSpec.swift; sourceTree = "<group>"; };
-		247E31921F54A64A0097201F /* PinLayoutOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PinLayoutOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		247E31921F54A64A0097201F /* PinLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PinLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		247E31951F54A64A0097201F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		247E31A61F54A6FA0097201F /* InfoOSX.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = InfoOSX.plist; path = Sources/InfoOSX.plist; sourceTree = SOURCE_ROOT; };
 		247E31A71F54A6FA0097201F /* PinLayoutOSX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PinLayoutOSX.h; path = Sources/PinLayoutOSX.h; sourceTree = SOURCE_ROOT; };
@@ -192,7 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				247E31D61F54B5620097201F /* PinLayoutOSX.framework in Frameworks */,
+				247E31F91F559A600097201F /* PinLayout.framework in Frameworks */,
 				E3C24BCC75B9ED3DC496A152 /* Pods_PinLayoutTestsOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,8 +252,8 @@
 			children = (
 				249EFE7A1E64FB4C00165E39 /* PinLayout.framework */,
 				249EFE831E64FB4C00165E39 /* PinLayoutTests.xctest */,
-				244DF2F81EF46C500090508B /* PinLayoutTVOS.framework */,
-				247E31921F54A64A0097201F /* PinLayoutOSX.framework */,
+				244DF2F81EF46C500090508B /* PinLayout.framework */,
+				247E31921F54A64A0097201F /* PinLayout.framework */,
 				247E31CD1F54ADC70097201F /* PinLayoutTestsOSX.xctest */,
 			);
 			name = Products;
@@ -372,7 +372,6 @@
 				244DF2F31EF46C500090508B /* Sources */,
 				244DF2F41EF46C500090508B /* Frameworks */,
 				244DF2F51EF46C500090508B /* Headers */,
-				244DF2F61EF46C500090508B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -380,7 +379,7 @@
 			);
 			name = PinLayoutTVOS;
 			productName = PinLayoutTVOS;
-			productReference = 244DF2F81EF46C500090508B /* PinLayoutTVOS.framework */;
+			productReference = 244DF2F81EF46C500090508B /* PinLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		247E31911F54A64A0097201F /* PinLayoutOSX */ = {
@@ -397,7 +396,7 @@
 			);
 			name = PinLayoutOSX;
 			productName = PinLayoutOSX;
-			productReference = 247E31921F54A64A0097201F /* PinLayoutOSX.framework */;
+			productReference = 247E31921F54A64A0097201F /* PinLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		247E31AF1F54ADC70097201F /* PinLayoutTestsOSX */ = {
@@ -515,13 +514,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		244DF2F61EF46C500090508B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		247E31C61F54ADC70097201F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -545,13 +537,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PinLayoutTestsOSX-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		247E31C81F54ADC70097201F /* [CP] Embed Pods Frameworks */ = {
@@ -560,9 +555,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PinLayoutTestsOSX/Pods-PinLayoutTestsOSX-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble-macOS/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick-macOS/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -590,9 +590,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PinLayoutTests/Pods-PinLayoutTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble-iOS/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick-iOS/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -620,13 +625,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PinLayoutTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -763,7 +771,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mirego.PinLayoutTVOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PinLayout;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -788,7 +796,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mirego.PinLayoutTVOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PinLayout;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -814,9 +822,9 @@
 				INFOPLIST_FILE = Sources/InfoOSX.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mirego.PinLayoutOSX;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mirego.PinLayout;
+				PRODUCT_NAME = PinLayout;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -840,9 +848,9 @@
 				INFOPLIST_FILE = Sources/InfoOSX.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mirego.PinLayoutOSX;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mirego.PinLayout;
+				PRODUCT_NAME = PinLayout;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -857,13 +865,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mirego.PinLayoutTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mirego.PinLayoutTestsOSX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -877,13 +882,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mirego.PinLayoutTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mirego.PinLayoutTestsOSX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;

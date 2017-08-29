@@ -44,6 +44,23 @@ public extension UIView {
         return EdgeListImpl(view: self)
     }
 }
+#else
+    import AppKit
+    public extension NSView {
+        public var pin: PinLayout {
+            return PinLayoutImpl(view: self)
+        }
+        
+        public var anchor: AnchorList {
+            return AnchorListImpl(view: self)
+        }
+        
+        public var edge: EdgeList {
+            return EdgeListImpl(view: self)
+        }
+    }
+
+#endif
 
 /*
  UIView's anchors point
@@ -367,6 +384,3 @@ public protocol HorizontalEdge {
 public protocol VerticalEdge {
 }
     
-#else
-    import AppKit
-#endif

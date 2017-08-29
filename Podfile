@@ -1,28 +1,20 @@
 use_frameworks!
 
 workspace 'PinLayout.xcworkspace'
+project 'PinLayout.xcodeproj'
 
 target 'PinLayoutTests' do
-  platform :ios
-  project 'PinLayout.xcodeproj'
-
+  platform :ios, "8.0"
+  
   pod 'Quick'
-  pod 'Nimble', :inhibit_warnings => true
+  pod 'Nimble', '~> 6.0.0'
 end
 
 target 'PinLayoutTestsOSX' do
-  platform :osx
-  project 'PinLayout.xcodeproj'
-
+  use_frameworks!
+  platform :osx, "10.10"
+  
+  
   pod 'Quick'
-  pod 'Nimble', :inhibit_warnings => true
-end
-
-target 'PinLayoutSample' do
-  platform :ios
-  project 'Example/PinLayoutSample.xcodeproj'
-
-  # Debug only
-  pod 'Reveal-SDK', :configurations => ['Debug']
-  pod 'SwiftLint'
+  pod 'Nimble', '~> 6.0.0'
 end

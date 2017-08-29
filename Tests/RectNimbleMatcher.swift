@@ -26,7 +26,11 @@
 // POSSIBILITY OF SUCH DAMAGE.
 
 import Nimble
+import Quick
+
+#if os(iOS) || os(tvOS)
 import UIKit
+#endif
 
 public func beCloseTo(_ expectedValue: CGRect, within delta: CGFloat = 0.00001) -> Predicate<CGRect> {
     let errorMessage = "be close to <\(stringify(expectedValue))> (each within \(stringify(delta)))"

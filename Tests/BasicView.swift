@@ -25,14 +25,15 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
 
+#if os(iOS) || os(tvOS)
 import UIKit
-
+    
 class BasicView: UIView {
     fileprivate let label = UILabel()
     
     init(text: String? = nil, color: UIColor) {
         super.init(frame: .zero)
-
+        
         backgroundColor = color
         layer.borderWidth = 1
         layer.borderColor = UIColor.lightGray.cgColor
@@ -43,14 +44,14 @@ class BasicView: UIView {
         label.sizeToFit()
         addSubview(label)
     }
-
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-            
+        
         label.pin.top(0).left(0)
     }
     
@@ -72,3 +73,50 @@ class BasicView: UIView {
         return newSize
     }
 }
+
+#else
+import AppKit
+    
+class BasicView: NSView {
+//    fileprivate let label = NSLabel()
+    
+    init(text: String? = nil, color: NSColor) {
+        super.init(frame: .zero)
+        
+//        backgroundColor = color
+        layer?.borderWidth = 1
+        layer?.borderColor = NSColor.lightGray.cgColor
+        
+//        label.text = text
+////        label.font = UIFont.systemFont(ofSize: 7)
+//        label.textColor = .white
+//        label.sizeToFit()
+//        addSubview(label)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    var sizeThatFitsExpectedArea: CGFloat = 40 * 40
+    
+    override func sizeThatFits(_ size: CGSize) -> CGSize {
+        var newSize = CGSize()
+        if size.width != CGFloat.greatestFiniteMagnitude {
+            newSize.width = size.width
+            newSize.height = sizeThatFitsExpectedArea / newSize.width
+        } else if size.height != CGFloat.greatestFiniteMagnitude {
+            newSize.height = size.height
+            newSize.width = sizeThatFitsExpectedArea / newSize.height
+        } else {
+            newSize.width = 40
+            newSize.height = sizeThatFitsExpectedArea / newSize.width
+        }
+        
+        return newSize
+    }
+}
+//extension NSView: Frameable {
+//}
+#endif
+
