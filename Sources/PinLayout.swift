@@ -366,6 +366,7 @@ public protocol HorizontalEdge {
 /// UIView's vertical edges (top/bottom) definition
 public protocol VerticalEdge {
 }
-
-        
+    
+#else
+    import AppKit
 #endif

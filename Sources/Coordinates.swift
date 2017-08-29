@@ -27,56 +27,74 @@
 
 import Foundation
 
+protocol Frameable {
+    var frame: CGRect { get }
+}
+
+
 #if os(iOS) || os(tvOS)
-import UIKit
+    import UIKit
+    
+    extension UIView: Frameable {
+    }
+#else
+    import AppKit
+    
+    extension NSView: Frameable {
+    }
+#endif
 
 class Coordinates {
-    static func hCenter(_ view: UIView) -> CGFloat {
+    static func hCenter(_ view: Frameable) -> CGFloat {
         return view.frame.minX + (view.frame.width / 2)
     }
 
-    static func vCenter(_ view: UIView) -> CGFloat {
+    static func vCenter(_ view: Frameable) -> CGFloat {
         return view.frame.minY + (view.frame.height / 2)
     }
 
-    static func topLeft(_ view: UIView) -> CGPoint {
+    static func topLeft(_ view: Frameable) -> CGPoint {
         return CGPoint(x: view.frame.minX, y: view.frame.minY)
     }
 
-    static func topCenter(_ view: UIView) -> CGPoint {
+    static func topCenter(_ view: Frameable) -> CGPoint {
         return CGPoint(x: hCenter(view), y: view.frame.minY)
     }
 
-    static func topRight(_ view: UIView) -> CGPoint {
+    static func topRight(_ view: Frameable) -> CGPoint {
         return CGPoint(x: view.frame.minX + view.frame.width, y: view.frame.minY)
     }
 
-    static func centerLeft(_ view: UIView) -> CGPoint {
+    static func centerLeft(_ view: Frameable) -> CGPoint {
         return CGPoint(x: view.frame.minX, y: vCenter(view))
     }
     
-    static func center(_ view: UIView) -> CGPoint {
+    static func center(_ view: Frameable) -> CGPoint {
         return CGPoint(x: hCenter(view), y: vCenter(view))
     }
 
-    static func centerRight(_ view: UIView) -> CGPoint {
+    static func centerRight(_ view: Frameable) -> CGPoint {
         return CGPoint(x: view.frame.minX + view.frame.width, y: vCenter(view))
     }
     
-    static func bottomLeft(_ view: UIView) -> CGPoint {
+    static func bottomLeft(_ view: Frameable) -> CGPoint {
         return CGPoint(x: view.frame.minX, y: view.frame.minY + view.frame.height)
     }
 
-    static func bottomCenter(_ view: UIView) -> CGPoint {
+    static func bottomCenter(_ view: Frameable) -> CGPoint {
         return CGPoint(x: hCenter(view), y: view.frame.minY + view.frame.height)
     }
 
-    static func bottomRight(_ view: UIView) -> CGPoint {
+    static func bottomRight(_ view: Frameable) -> CGPoint {
         return CGPoint(x: view.frame.minX + view.frame.width, y: view.frame.minY + view.frame.height)
     }
 
+    #if os(iOS) || os(tvOS)
     internal static var displayScale: CGFloat = UIScreen.main.scale
-
+    #else
+    internal static var displayScale: CGFloat = NSScreen.main()?.backingScaleFactor ?? 1
+    #endif
+    
     static func adjustRectToDisplayScale(_ rect: CGRect) -> CGRect {
         return CGRect(x: roundFloatToDisplayScale(rect.origin.x),
                       y: roundFloatToDisplayScale(rect.origin.y),
@@ -93,4 +111,3 @@ class Coordinates {
     }
 }
 
-#endif
