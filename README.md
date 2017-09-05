@@ -1185,7 +1185,7 @@ dependencies: [
 
 ## Examples App <a name="examples_app"></a>
 The PinLayout's Example App exposes some usage example of PinLayout in real situations.   
-[See the Example App section to get more information](docs_markdown/examples.md).
+[See the Example App section to get more information](docs/examples.md).
 
 <p align="center">
   <a href="https://github.com/mirego/PinLayout/blob/master/Example/PinLayoutSample/UI/Tests/Intro/IntroView.swift"><img src="docs/pinlayout_exampleapp_intro.png" alt="PinLayout example" width=90/></a>
