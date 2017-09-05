@@ -176,9 +176,9 @@ These results also mean that **PinLayout is by far faster than any layout framew
 
 [See here a more complete details, results and explanation of the benchmark](docs/Benchmark.md).
 
-<p align="center"> Tested on a iPhone 6S iOS 10.3.2</p>
+<p align="center"> Tested on a iPhone 7 iOS 10.3.2</p>
 <p align="center">
-  <img src="docs/Benchmark/benchmark_iphone6s.png" alt="PinLayout Performance" width=600/>
+  <img src="docs/Benchmark/benchmark_iphone7.png" alt="PinLayout Performance" width=600/>
 </p>
 
 <br/>
@@ -1184,29 +1184,18 @@ dependencies: [
 <br>
 
 ## Examples App <a name="examples_app"></a>
-There is an Example app that expose some usage example on PinLayout, including:
-
-* The [introduction example](#intro_usage_example) presented priviously in this README.
-* An RTL enabled version of the [introduction example](#intro_usage_example)
-* An example showing of the right-to-left (RTL) language support. Similar to the Intro example.
-* An example of UITableView with variable height cells.
-* Example showing a form
-* Example showing relative positioning.
-* ...
-
-:pushpin: Tap on images to see the example's source code.
+The PinLayout's Example App exposes some usage example of PinLayout in real situations.   
+[See the Example App section to get more information](docs_markdown/examples.md).
 
 <p align="center">
-  <a href="https://github.com/mirego/PinLayout/blob/master/Example/PinLayoutSample/UI/Tests/Intro/IntroView.swift"><img src="docs/pinlayout_exampleapp_intro.png" alt="PinLayout example" width=120/></a>
-  <a href="https://github.com/mirego/PinLayout/blob/master/Example/PinLayoutSample/UI/Tests/AdjustToContainer/Subviews/ChoiceSelectorView.swift"><img src="docs/pinlayout_example_adjust_to_container-portrait.png" alt="PinLayout example" width=120/></a>
-  <a href="https://github.com/mirego/PinLayout/blob/master/Example/PinLayoutSample/UI/Tests/TableViewExample/TableViewExampleView.swift"><img src="docs/pinlayout_exampleapp_tableview.png" alt="PinLayout example" width=120/></a>
-  <a href="https://github.com/mirego/PinLayout/blob/master/Example/PinLayoutSample/UI/Tests/Form/FormView.swift"><img src="docs/pinlayout_example_form.gif" alt="PinLayout example" width=120/></a>
-  <a href="https://github.com/mirego/PinLayout/blob/master/Example/PinLayoutSample/UI/Tests/AutoAdjustingSize/AutoAdjustingSizeView.swift"><img src="docs/pinlayout_exampleapp_auto_adjusting_size.png" alt="PinLayout example" width=120/></a>
-  <a href="https://github.com/mirego/PinLayout/blob/master/Example/PinLayoutSample/UI/Tests/RelativeView/RelativeView.swift"><img src="docs/pinlayout_exampleapp_relative_position.png" alt="PinLayout example" width=120/> </a> 
-  <a href="https://github.com/mirego/PinLayout/tree/master/Example/PinLayoutSample/UI/Tests/MultiRelativeView"><img src="docs/pinlayout_exampleapp_multi_relative_position.png" alt="PinLayout example" width=120/></a>
+  <a href="https://github.com/mirego/PinLayout/blob/master/Example/PinLayoutSample/UI/Tests/Intro/IntroView.swift"><img src="docs/pinlayout_exampleapp_intro.png" alt="PinLayout example" width=90/></a>
+  <a href="https://github.com/mirego/PinLayout/blob/master/Example/PinLayoutSample/UI/Tests/AdjustToContainer/Subviews/ChoiceSelectorView.swift"><img src="docs/pinlayout_example_adjust_to_container-portrait.png" alt="PinLayout example" width=90/></a>
+  <a href="https://github.com/mirego/PinLayout/blob/master/Example/PinLayoutSample/UI/Tests/TableViewExample/TableViewExampleView.swift"><img src="docs/pinlayout_exampleapp_tableview.png" alt="PinLayout example" width=90/></a>
+  <a href="https://github.com/mirego/PinLayout/blob/master/Example/PinLayoutSample/UI/Tests/Form/FormView.swift"><img src="docs/pinlayout_example_form.gif" alt="PinLayout example" width=90/></a>
+  <a href="https://github.com/mirego/PinLayout/blob/master/Example/PinLayoutSample/UI/Tests/AutoAdjustingSize/AutoAdjustingSizeView.swift"><img src="docs/pinlayout_exampleapp_auto_adjusting_size.png" alt="PinLayout example" width=90/></a>
+  <a href="https://github.com/mirego/PinLayout/blob/master/Example/PinLayoutSample/UI/Tests/RelativeView/RelativeView.swift"><img src="docs/pinlayout_exampleapp_relative_position.png" alt="PinLayout example" width=90/> </a> 
+  <a href="https://github.com/mirego/PinLayout/tree/master/Example/PinLayoutSample/UI/Tests/MultiRelativeView"><img src="docs/pinlayout_exampleapp_multi_relative_position.png" alt="PinLayout example" width=90/></a>
 </p>
-
-This app is available in the `Example` folder. Note that you must do a `pod install` before running the example project.
 
 <br>
 

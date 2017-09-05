@@ -41,18 +41,18 @@ For example it took 611 miliseconds to render 100 UICollectionView's cells using
 
 <br>
 
-### PinLayout and FlexLayout performance compared to Auto layout 
+### PinLayout performance compared to Auto layout 
 
-This table shows FlexLayout and PinLayout performance compared to  Auto layout when layouting UICollectionView's cells.
+This table shows PinLayout performance compared to Auto layout when layouting UICollectionView's cells.
 
-The table shows that **FlexLayout took 23 miliseconds** to render 100 UICollectionView's cells on a iPhone 6 compared to **53 miliseconds for PinLayout** and **611 ms for Auto layout**. Its 26 time faster for FlexLayout and 12 time faster for PinLayout.
+The table shows that ** PinLayout took 20 miliseconds** to render 100 UICollectionView's cells on a iPhone 7 compared to **244 ms for Auto layout**. Its 9 time faster.
 
-|           | Auto layout time  (seconds) |  **PinLayout** time  (seconds) | **PinLayout** performance compared to Auto layout | **FlexLayout** time  (seconds) | **FlexLayout** performance compared to Auto layout |
-|:---------:|:---------:|:---------:|:-----------------------------------------------------------------------:|:---------------------------:|:-------------------------:|
-|  iPhone 5 | 2.074 |  0.126 | 16x Faster | 0.067 | 31x Faster | 
-|  iPhone 6 | 0.611 |  0.053 | 12x Faster| 0.023 | 26x Faster  | 
-| iPhone 6S | 0.344 |  0.029 | 12x Faster| NA | NA  | 
-|  iPhone 7 | 0.293 |  0.021 | 14x Faster| 0.008 | 37x Faster  | 
+|           | Auto layout time  (seconds) |  **PinLayout** time  (seconds) | **PinLayout** performance compared to Auto layout |
+|:---------:|:---------:|:---------:|:-----------------------------------------------------------------------:|
+|  iPhone 5 | 1.718 |  0.116 | 11x Faster |
+|  iPhone 6 | 0.588 |  0.056 | 8x Faster|
+| iPhone 6S | 0.368  |  0.032 | 9x Faster|
+|  iPhone 7 | 0.244 |  0.02 | 9x Faster|
 
 <br>
 
@@ -61,17 +61,10 @@ The table shows that **FlexLayout took 23 miliseconds** to render 100 UICollecti
 :pushpin: You can see the benchmark raw data in this [spreadsheet](Benchmark/benchmark.xlsx).
 
 
-<!--<p align="center">
-  <a href=""><img src="Benchmark/benchmark_iphone5.png" alt="PinLayout Performance"/></a>
-  
-<p align="center">
-  <a href=""><img src="Benchmark/benchmark_iphone6.png" alt="PinLayout Performance"/></a>
--->
-<p align="center">
-  <a href=""><img src="Benchmark/benchmark_iphone6s.png" alt="PinLayout Performance"/></a>
-  
-<p align="center">
-  <a href=""><img src="Benchmark/benchmark_iphone7.png" alt="PinLayout Performance"/></a>
+<!--<a href=""><img src="Benchmark/benchmark_iphone6.png" alt="PinLayout Performance"/></a>-->-->
+  <!--<a href=""><img src="Benchmark/benchmark_iphone6s.png" alt="PinLayout Performance"/></a>-->  
+<a href=""><img src="Benchmark/benchmark_iphone7.png" alt="PinLayout Performance"/></a>
+<a href=""><img src="Benchmark/benchmark_iphone6.png" alt="PinLayout Performance"/></a>
   
 <br>
 
