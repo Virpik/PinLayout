@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="pinlayout-logo-small.png" alt="PinLayout Performance" width=100/>
+	<img src="pinlayout-logo-small.png" width=100/>
 </p>
 
 <h1 align="center" style="color: #376C9D; font-family: Arial Black, Gadget, sans-serif; font-size: 1.5em">PinLayout Benchmark</h1>
@@ -61,10 +61,10 @@ The table shows that ** PinLayout took 20 miliseconds** to render 100 UICollecti
 :pushpin: You can see the benchmark raw data in this [spreadsheet](Benchmark/benchmark.xlsx).
 
 
-<!--<a href=""><img src="Benchmark/benchmark_iphone6.png" alt="PinLayout Performance"/></a>-->-->
-  <!--<a href=""><img src="Benchmark/benchmark_iphone6s.png" alt="PinLayout Performance"/></a>-->  
-<a href=""><img src="Benchmark/benchmark_iphone7.png" alt="PinLayout Performance"/></a>
-<a href=""><img src="Benchmark/benchmark_iphone6.png" alt="PinLayout Performance"/></a>
+<a href="Benchmark/benchmark_iphone7.png"><img src="Benchmark/benchmark_iphone7.png"/></a>
+<a href=""Benchmark/benchmark_iphone6s.png"><img src="Benchmark/benchmark_iphone6s.png"/></a>
+<a href="Benchmark/benchmark_iphone6.png"><img src="Benchmark/benchmark_iphone6.png"/></a>
+<a href="Benchmark/benchmark_iphone5.png"><img src="Benchmark/benchmark_iphone5.png"/></a>
   
 <br>
 
