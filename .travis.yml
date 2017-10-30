@@ -30,8 +30,8 @@ script:
     #  set -o pipefail && xcodebuild -workspace PinLayout.xcworkspace -scheme "$SCHEME" -sdk $SDK -destination 'platform=tvOS Simulator,name=Apple TV 1080p' build | xcpretty -f `xcpretty-travis-formatter`
     #fi
 
-after_success:
-  - |
-    if [[ $SCHEME = "PinLayout" ]]; then
-      bash <(curl -s https://codecov.io/bash) -J 'PinLayout' -J 'PinLayoutTests'
-    fi
+# after_success:
+  # - |
+  #   if [[ $SCHEME = "PinLayout" ]]; then
+  #     bash <(curl -s https://codecov.io/bash) -J 'PinLayout' -J 'PinLayoutTests'
+  #   fi
