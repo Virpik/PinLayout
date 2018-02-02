@@ -4,15 +4,7 @@
 #
 version: 2
 
-dependencies:
-  pre:
-    - gem -v
-    # - rvm @global do gem uninstall bundler -ax
-    # - rvm install rubygems 2.4.8 --force
-    # - gem install bundler --pre
-    - rbenv install 2.3.1 
-    - bundle -v
-
+d
 # dependencies:
 #     pre:                                                                                                                                                                       
 #       - rvm install rubygems 2.4.8 --force                                                                                                                                     
@@ -26,6 +18,15 @@ jobs:
 
     steps:
       - checkout
+
+    dependencies:
+        pre:
+          - gem -v
+          # - rvm @global do gem uninstall bundler -ax
+          # - rvm install rubygems 2.4.8 --force
+          # - gem install bundler --pre
+          - rbenv install 2.3.1 
+          - bundle -v
 
        # Install Gems
       - run:
