@@ -4,14 +4,8 @@
 #
 version: 2
 
-# dependencies:
-#     pre:                                                                                                                                                                       
-#       - rvm install rubygems 2.4.8 --force                                                                                                                                     
-#       - gem install bundler -v 1.11.2
 jobs:
-
   build:
-
     # Specify the Xcode version to use
     macos:
       xcode: "9.2.0"
@@ -38,10 +32,10 @@ jobs:
       #     command: bundle install 
 
       # Install CocoaPods
-      - run:
-          name: Install CocoaPods
-          # command: bundle exec pod install
-          command: pod install
+      # - run:
+      #     name: Install CocoaPods
+      #     # command: bundle exec pod install
+      #     command: pod install
 
       # Build the app and run tests
       - run:
