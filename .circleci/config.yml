@@ -21,7 +21,7 @@ jobs:
        # Install Gems
       - run:
           name: Install Gems
-          command: bundle isntall
+          command: bundle install
 
       # Install CocoaPods
       - run:
