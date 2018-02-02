@@ -18,10 +18,15 @@ jobs:
     steps:
       - checkout
 
+       # Install Gems
+      - run:
+          name: Install Gems
+          command: bundle isntall
+
       # Install CocoaPods
       - run:
           name: Install CocoaPods
-          command: pod install
+          command: bundle exec pod install
 
       # Build the app and run tests
       - run:
