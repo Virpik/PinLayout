@@ -16,16 +16,16 @@ jobs:
     macos:
       xcode: "9.2.0"
 
-    dependencies:
-      pre:
-        - gem -v
-        # - rvm @global do gem uninstall bundler -ax
-        # - rvm install rubygems 2.4.8 --force
-        # - gem install bundler --pre
-        - rbenv install 2.3.1 
-        - bundle -v
-
     steps:
+      dependencies:
+        pre:
+          - gem -v
+          # - rvm @global do gem uninstall bundler -ax
+          # - rvm install rubygems 2.4.8 --force
+          # - gem install bundler --pre
+          - rbenv install 2.3.1 
+          - bundle -v
+
       - checkout
 
        # Install Gems
