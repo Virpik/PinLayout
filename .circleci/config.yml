@@ -4,7 +4,6 @@
 #
 version: 2
 
-d
 # dependencies:
 #     pre:                                                                                                                                                                       
 #       - rvm install rubygems 2.4.8 --force                                                                                                                                     
