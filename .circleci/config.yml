@@ -33,6 +33,10 @@ jobs:
           name: Install Gems
           command: brew install ruby 
 
+      - run:
+          name: Install Gems
+          command: bundle install 
+
       # Install CocoaPods
       - run:
           name: Install CocoaPods
